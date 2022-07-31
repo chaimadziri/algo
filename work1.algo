@@ -1,0 +1,20 @@
+ch:=STRING[10];
+nbword:=0;
+nbvowels:=0;
+i:INTEGER;
+begin
+REPEAT
+    write(ch);
+    read(ch);
+UNTIL (ch.length =".")
+FOR i FROM 0 TO ch.length-1 DO
+    IF (i=" ") THEN
+        nbword:=nbword+1;
+    END_IF
+    IF (i="o" || i="i" || i="y" || i="e" || i="a" || i="u" ) THEN
+        nbvowels:=nbvowels+1;
+    END_IF
+END_FOR
+read(nbvowels);
+read(nbword);
+end;

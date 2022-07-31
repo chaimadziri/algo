@@ -1,0 +1,15 @@
+set1 : ARRAY_OFTYPE[10];
+set2 : ARRAY_OFTYPE[10];
+sum:=0;
+i,j:INTEGER;
+begin
+set1 :={3,1,7,9};
+set2 :={2,4,1,9,3};
+FOR i FROM 0 TO set1.length DO
+    FOR j FROM 0 TO set1.length DO
+    IF (conditon) THEN
+        set_instructions
+    END_IF
+END_FOR
+END_FOR
+end;
